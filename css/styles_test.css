@@ -1,0 +1,121 @@
+
+body, html {
+    height: 100%;
+}
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: #3f3e3a;
+  vertical-align: middle;
+}
+
+.fixed-nav-bar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.fixed-nav-bar li{
+    display: inline;
+    line-height: 50px;
+    height: 50px;
+    color: #c0bbb5;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 0 15px;
+}
+
+.content{
+width: 100%;
+height: 100%;
+position: relative;
+}
+
+
+.banner { 
+    background: #c0bbb5 url("../images/header_background.png") no-repeat top center;
+    background-size: auto 100%;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: -1;
+    overflow: hidden;
+    position: fixed;
+    margin: 0;
+}
+
+
+.banner img{
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: fixed;
+}
+
+.banner div{
+    display: inline-block;
+    width: calc(100% / 3);
+    height: 100%;
+    padding: 50px;
+    overflow: auto;
+}
+
+.banner:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+.banner-text{
+    z-index: 1;
+    text-align: left;
+    width: 100%;
+    padding-left: 50%;
+    padding-right: 10%;
+    padding-top: 20%;
+    color: #ffffff;
+}
+
+
+.banner-scroll{
+    background: white url("../images/header_background.png") no-repeat top center;
+    background-size: auto 100%;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 2;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+
+}
+
+
+.bufos-overview{
+    background-color: #3f3e3a;
+    color: #c0bbb5;
+    width: 100%;
+    padding: 50px 100px;
+    display: block;
+}
+
+.yovan-section{
+    background: #c0bbb5 url("../images/yovan_background.png") no-repeat top right;
+    background-size: auto 100%;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+}
