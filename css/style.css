@@ -148,15 +148,37 @@ Main components
 
 .profile-pic{
   display: inline-block;
+  float: left;
   width: 20%;
-  height: 100px;
-  margin: 10px 5%;
-  background-image: url("../img/cd-background-3.jpg");
+  padding-bottom: 20%;
+  margin: 10px 0 10px 5%;
+  background-image: url("../img/yovan_profile_img.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .profile-des{
   display: inline-block;
-  width: 20%;
   height: 100px;
-  margin: 10px 5%;
+  margin: 10px 0 10px 2%;
+}
+
+.yovan-prof-right{
+  float: right;
+  width: 50%;
+  /*margin-right: 5%;*/
+}
+
+.yovan-prof-left{
+  float: left;
+  border-width: 2px;
+  border-style: dashed;
+  width: 50%;
+  /*margin-right: 5%;*/
+}
+
+.profile-container{
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto;
 }
