@@ -135,7 +135,7 @@ Main components
   background-color: #b4d7a8;
   color: #3d3536;
 }
-@media only screen and (min-width: 768px) {
+/*@media only screen and (min-width: 768px) {
   .cd-scrolling-bg {
     padding: 8em 0;
     font-size: 20px;
@@ -144,14 +144,35 @@ Main components
     font-weight: 300;
   }
 }
+*/
 
+.profile-container{
+  display: flex;
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.yovan-prof-left{
+  float: left;
+  border-width: 2px;
+  border-right: dashed;
+  width: 35%;
+  /*margin-right: 5%;*/
+}
+
+.yovan-prof-right{
+  float: right;
+  width: 65%;
+  margin-left: 2%;
+}
 
 .profile-pic{
-  display: inline-block;
-  float: left;
-  width: 20%;
-  padding-bottom: 20%;
-  margin: 10px 0 10px 5%;
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 11em;
+  padding-bottom: 11em;
   background-image: url("../img/yovan_profile_img.png");
   background-size: cover;
   background-position: center;
@@ -159,26 +180,9 @@ Main components
 
 .profile-des{
   display: inline-block;
-  height: 100px;
-  margin: 10px 0 10px 2%;
+  width: 100%;
+  text-align: center;
+  margin-top: 6%;
 }
 
-.yovan-prof-right{
-  float: right;
-  width: 50%;
-  /*margin-right: 5%;*/
-}
 
-.yovan-prof-left{
-  float: left;
-  border-width: 2px;
-  border-style: dashed;
-  width: 50%;
-  /*margin-right: 5%;*/
-}
-
-.profile-container{
-  width: 90%;
-  max-width: 768px;
-  margin: 0 auto;
-}
