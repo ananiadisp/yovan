@@ -40,7 +40,8 @@ Modules - reusable parts of our design
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 90%;
   max-width: 768px;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
+  text-align: center;
 }
 .cd-container::after {
   /* clearfix */
@@ -117,7 +118,7 @@ Main components
 
 .cd-scrolling-bg {
   position: relative;
-  min-height: 100%;
+  /*min-height: 100%;*/
   padding: 4em 0;
   line-height: 1.6;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
@@ -158,7 +159,7 @@ Main components
   border-width: 2px;
   border-right: dashed;
   width: 35%;
-  /*margin-right: 5%;*/
+  min-width: 120px;
 }
 
 .yovan-prof-right{
@@ -171,8 +172,10 @@ Main components
   display: block;
   border-radius: 50%;
   margin: 0 auto;
-  width: 11em;
-  padding-bottom: 11em;
+  width: 70%;
+  padding-bottom: 70%;
+  min-width: 100px;
+  min-height: 100px;
   background-image: url("../img/yovan_profile_img.png");
   background-size: cover;
   background-position: center;
@@ -186,3 +189,44 @@ Main components
 }
 
 
+/*---------------------------------------------
+
+responsiveness
+
+----------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+  .profile-container {
+    display: block;
+  }
+
+  .yovan-prof-left {
+    float: none;
+    display: block;
+    width: 65%;
+    border-right: none;
+    border-bottom: dashed;
+    margin: 0 auto 20px auto;
+    padding-bottom: 20px;
+  }
+
+  .profile-pic {
+    width: 30%;
+    padding-bottom: 30%;
+    display: inline-block;
+  }
+
+  .profile-des {
+    width: 60%;
+    margin: 0;
+    text-align: start;
+    padding-left: 20px;
+  }
+
+  .yovan-prof-right {
+    margin: auto;
+    display: block;
+    float: none;
+
+  }
+}
